@@ -62,11 +62,6 @@ cart_items = driver.find_element(By.CLASS_NAME,"shopping_cart_link")
 cart_items.click()
 driver.find_element(By.XPATH,"//button[@id='remove-test.allthethings()-t-shirt-(red)']").click()
 
-#assert len(cart_items) == 1, f"Expected 1 item in cart, found {len(cart_items)}"
-#cart_product_name = cart_items[0].find_element(By.XPATH,"//div[normalize-space()='Sauce Labs Fleece Jacket']").text
-#assert Second_Product == cart_product_name, "Product in cart does not match the one added"
-#print("✅ Only one product is in the cart, and it matches the product added.")
-
 #CheckOut
 driver.find_element(By.XPATH,"//button[@id='checkout']").click()
 driver.find_element(By.ID,'first-name').send_keys('Shinchan')
