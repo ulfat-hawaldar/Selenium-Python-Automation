@@ -29,7 +29,7 @@ Product = driver.find_element(By.XPATH,"//div[normalize-space()='Test.allTheThin
 assert Product.is_displayed(), "Test.allTheThings() T-Shirt (Red)"
 print("Adding product to cart:", Product.text )
 driver.find_element(By.ID,'add-to-cart-test.allthethings()-t-shirt-(red)').click()
-time.sleep(2)
+time.sleep(2) 
 
 # verify the cart
 driver.execute_script("window.scrollTo(0, 0);")
@@ -83,3 +83,4 @@ actual_text = message.text
 assert expected_text in actual_text, f"Expected message: '{expected_text}', but got: '{actual_text}'"
 
 print(" Message is visible and correct.")
+driver.quit()

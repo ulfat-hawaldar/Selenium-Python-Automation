@@ -1,4 +1,4 @@
-num = 12345
+num = 'Ulfat'
 
 # Convert to string, reverse it, and convert back to int
 reversed_num = int(str(num)[::-1])
